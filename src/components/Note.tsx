@@ -47,6 +47,7 @@ export class Note extends Component<MyProps, MyState> {
     this.setState({
       note : {title : title , desc : desc}
     })
+    try{
     const result = await AsyncStorage.getItem('notes')
     let notes = []
     if(result!== null){
@@ -65,6 +66,9 @@ export class Note extends Component<MyProps, MyState> {
 
     await AsyncStorage.setItem('notes' , JSON.stringify(newNotes))
     this.props.findNotes();
+  }catch (error) {
+    console.log(error)
+  }
   }
 
 
@@ -78,7 +82,7 @@ export class Note extends Component<MyProps, MyState> {
     const newNotes = notes.filter(
       (n) => n.id !== this.props.item.id
     );
-    console.log("newNote", newNotes);
+    // console.log("newNote", newNotes);
     await AsyncStorage.setItem("notes", JSON.stringify(newNotes));
     this.props.findNotes();
   };
@@ -105,26 +109,26 @@ export class Note extends Component<MyProps, MyState> {
   render() {
     const { title, desc } = this.props.item;
     return (
-      <View>
+      <View testID={'Note'}>
        <View style={styles.container} >
         <View style={styles.iconsTitleContainer} >
           <View>
-          <Text style={styles.title} numberOfLines={2} >{title}</Text>
-          <Text style={styles.desc} numberOfLines={3} >{desc}</Text>
+          <Text testID={'Notetitle'} style={styles.title} numberOfLines={2} >{title}</Text>
+          <Text testID={'Notedesc'}style={styles.desc} numberOfLines={3} >{desc}</Text>
           </View>
           <View style={styles.icons} >
             <Pressable onPress={this.openModal}>
-                <Image source={{uri:'https://cdn-icons-png.flaticon.com/128/2951/2951136.png'}} style={styles.icon1}/>
+                <Image testID="Edit1" alt="Edit" source={{uri:'https://cdn-icons-png.flaticon.com/128/2951/2951136.png'}} style={styles.icon1}/>
             </Pressable>
             <Pressable onPress={this.displayAlert}>
-                <Image source={{uri:'https://cdn-icons-png.flaticon.com/128/10374/10374182.png'}} style={styles.icon}/>
+                <Image testID="Delete1" alt="Delete" source={{uri:'https://cdn-icons-png.flaticon.com/128/10374/10374182.png'}} style={styles.icon}/>
             </Pressable>
           </View>
         </View>
         
-      </View>
+       </View>
       
-      <NoteInputModal onSubmit={this.handleUpdate} isEdit={true} onClose={this.closeModal} note={{title : this.state.note.title , desc : this.state.note.desc}} visible={this.state.modalVisible} />
+       <NoteInputModal onSubmit={this.handleUpdate} isEdit={true} onClose={this.closeModal} note={{title : this.state.note.title , desc : this.state.note.desc}} visible={this.state.modalVisible} />
      </View>
     );
   }

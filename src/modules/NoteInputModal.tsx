@@ -98,6 +98,7 @@ export class NoteInputModal extends Component<MyProps, MyState> {
       <>
         <StatusBar translucent backgroundColor={'transparent'} />
         <Modal visible={visible} animationType='slide'>
+          <View testID={'Modal'} >
           <View style={styles.container}>
             <View style={styles.mainview}>
               <Pressable onPress={this.closeModal}>
@@ -136,6 +137,7 @@ export class NoteInputModal extends Component<MyProps, MyState> {
               style={[styles.modalBg, StyleSheet.absoluteFillObject]}
             ></View>
           </TouchableWithoutFeedback>
+          </View>
         </Modal>
       </>
     )

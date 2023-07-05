@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1688131872822" clover="3.2.0">
+  <project timestamp="1688131872822" name="All files">
+    <metrics statements="94" coveredstatements="77" conditionals="28" coveredconditionals="19" methods="31" coveredmethods="25" elements="153" coveredelements="121" complexity="0" loc="94" ncloc="94" packages="4" files="7" classes="7"/>
+    <package name="weatherAPP">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="App.tsx" path="C:\Users\ABC\weatherAPP\App.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="weatherAPP.src.components">
+      <metrics statements="40" coveredstatements="30" conditionals="6" coveredconditionals="2" methods="12" coveredmethods="9"/>
+      <file name="Note.tsx" path="C:\Users\ABC\weatherAPP\src\components\Note.tsx">
+        <metrics statements="38" coveredstatements="28" conditionals="6" coveredconditionals="2" methods="11" coveredmethods="8"/>
+        <line num="27" count="11" type="stmt"/>
+        <line num="28" count="11" type="stmt"/>
+        <line num="34" count="11" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="40" count="11" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="46" count="11" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="71" count="11" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="74" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="86" count="11" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="106" count="16" type="stmt"/>
+        <line num="107" count="16" type="stmt"/>
+        <line num="133" count="6" type="stmt"/>
+        <line num="135" count="6" type="stmt"/>
+      </file>
+      <file name="SearchBar.tsx" path="C:\Users\ABC\weatherAPP\src\components\SearchBar.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="12" count="22" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="weatherAPP.src.modules">
+      <metrics statements="53" coveredstatements="46" conditionals="22" coveredconditionals="17" methods="18" coveredmethods="15"/>
+      <file name="NoteInputModal.tsx" path="C:\Users\ABC\weatherAPP\src\modules\NoteInputModal.tsx">
+        <metrics statements="32" coveredstatements="25" conditionals="18" coveredconditionals="13" methods="9" coveredmethods="6"/>
+        <line num="31" count="21" type="stmt"/>
+        <line num="32" count="21" type="stmt"/>
+        <line num="39" count="21" type="stmt"/>
+        <line num="40" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="11" type="stmt"/>
+        <line num="48" count="21" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="52" count="21" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="65" count="21" type="stmt"/>
+        <line num="66" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="70" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="77" count="21" type="stmt"/>
+        <line num="78" count="1" type="cond" truecount="2" falsecount="2"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="82" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="96" count="53" type="stmt"/>
+        <line num="97" count="53" type="stmt"/>
+        <line num="123" count="0" type="stmt"/>
+        <line num="129" count="0" type="stmt"/>
+        <line num="147" count="6" type="stmt"/>
+      </file>
+      <file name="NoteScreen.tsx" path="C:\Users\ABC\weatherAPP\src\modules\NoteScreen.tsx">
+        <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="9" coveredmethods="9"/>
+        <line num="30" count="9" type="stmt"/>
+        <line num="31" count="9" type="stmt"/>
+        <line num="38" count="9" type="stmt"/>
+        <line num="41" count="9" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="43" count="12" type="stmt"/>
+        <line num="44" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="51" count="9" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="60" count="9" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="66" count="9" type="stmt"/>
+        <line num="67" count="3" type="stmt"/>
+        <line num="73" count="21" type="stmt"/>
+        <line num="83" count="5" type="stmt"/>
+        <line num="85" count="5" type="stmt"/>
+        <line num="113" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="weatherAPP.src.utils">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Strings.ts" path="C:\Users\ABC\weatherAPP\src\utils\Strings.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="colors.ts" path="C:\Users\ABC\weatherAPP\src\utils\colors.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+  </project>
+</coverage>
